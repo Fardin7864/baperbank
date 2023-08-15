@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaperBank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-roboto{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-roboto">
+    <div class="flex flex-col items-center">
+        <h1 class="text-3xl font-normal mt-4 mb-4">Let's get some <span class="text-purple-700 font-bold">Moooooooooney!!</span></h1>
+        <div class="grid grid-cols-3 space-x-4">
+            <div class="bg-green-400 w-40 h-20 rounded-md flex flex-col items-center justify-center text-white text-xl" >
+                <h3>Deposit</h3>
+                <p id="deposit-amount">$00</p>
+            </div>
+            <div class="bg-yellow-400 w-40 h-20 rounded-md flex flex-col items-center justify-center text-white text-xl" >
+                <h3>Withdrow</h3>
+                <p id="withdrow-amount">$00</p>
+            </div>
+            <div class="bg-purple-400 w-40 h-20 rounded-md flex flex-col items-center justify-center text-white text-xl" >
+                <h3>Balance</h3>
+                <p id="balance-amount">$00</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 space-x-4 mt-5">
+            <div class="bg-red-400 w-60 h-32 rounded-md flex flex-col justify-center text-white text-xl pl-9" >
+                <h3>Deposit</h3>
+                <input type="number" name="" id="deposit-input" class="block w-9/12 mb-2 px-2 text-sm text-black"  placeholder="$00">
+                <button id="btn-deposit" type="submit" class="text-white text-sm bg-orange-600 rounded p-1 w-20 font-medium hover:bg-sky-700">Deposit</button>
+            </div>
+            <div class="bg-teal-400 w-60 h-32 rounded-md flex flex-col justify-center text-white text-xl pl-9" >
+                <h3>Withdrow</h3>
+                <input type="number" name="" id="withdrow-input" class="block w-9/12 mb-2 px-2 text-sm text-black"  placeholder="$00">
+                <button id="btn-withdrow" type="submit" class="text-white text-sm bg-orange-600 rounded p-1 w-20 font-medium hover:bg-sky-700">Withdrow</button>
+            </div>
+        </div>
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>
